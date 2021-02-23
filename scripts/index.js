@@ -15,6 +15,7 @@ const TEXT_SLIDER = {
 		', dolor sit blanditiis quos ?',
 		', dolor sit blanditiis quos ?',
 	],
+	background: [],
 };
 
 new Swiper('.swiper-container', {
@@ -29,6 +30,15 @@ new Swiper('.swiper-container', {
 		slideChange() {
 			h1.innerHTML = TEXT_SLIDER.h1[this.realIndex];
 			dsk.innerHTML = TEXT_SLIDER.deskcription[this.realIndex];
+			document.body.style.backgroundImage = `url(${TEXT_SLIDER.background[this.realIndex]})`;
 		},
 	},
 });
+
+fetch('https://api.unsplash.com/photos/?client_id=TzkZQlQ1PdINlxCx_mZzNKHfNoGDMHhDVKOX65Qj0Ko')
+	.then((data) => data.json())
+	.then((data) => {
+		data.forEach((item) => {
+			TEXT_SLIDER.background.push(item.urls.regular);
+		});
+	});

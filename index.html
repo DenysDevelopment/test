@@ -6,66 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-		<style>
-			html,
-			body {
-				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-				font-size: 14px;
-				color: #000;
-				margin: 0;
-				padding: 0;
-				height: 100%;
-				position: relative;
-				padding-top: 20px;
-				padding-left: 20px;
-			}
-			.swiper-container {
-				width: 50%;
-				position: absolute;
-				top: 50%;
-				right: 0;
-				transform: translateY(-50%);
-			}
-
-			.swiper-wrapper {
-				padding: 50px;
-				padding-right: 0;
-			}
-
-			.swiper-slide {
-				background: rgb(121, 121, 121);
-			}
-
-			.swiper-slide {
-				width: 183.24px;
-				height: 287.15px;
-				transition: all 0.3s;
-			}
-
-			.swiper-slide-active {
-				transform: scale(1.2);
-			}
-			.swiper-slide-next {
-				transform: scale(1.1);
-				transition-delay: 0.2s;
-			}
-
-			.swiper-button {
-				position: absolute;
-				background-color: transparent;
-				border: 0;
-				outline: 0;
-				transition: all 0.3s;
-			}
-			.swiper-button:hover {
-				transform: scale(1.1);
-			}
-			.swiper-button-next,
-			.swiper-button-prev {
-				bottom: 0;
-				top: 90%;
-			}
-		</style>
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 
 	<body>
@@ -77,16 +18,16 @@
 		<!-- Swiper -->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
-				<div class="swiper-slide"></div>
+				<div class="swiper-slide">1</div>
+				<div class="swiper-slide">2</div>
+				<div class="swiper-slide">3</div>
+				<div class="swiper-slide">4</div>
+				<div class="swiper-slide">5</div>
+				<div class="swiper-slide">6</div>
+				<div class="swiper-slide">7</div>
+				<div class="swiper-slide">8</div>
+				<div class="swiper-slide">9</div>
+				<div class="swiper-slide">10</div>
 			</div>
 
 			<button class="swiper-button swiper-button-next"></button>
@@ -98,6 +39,6 @@
 
 		<!-- Initialize Swiper -->
 		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-		<script src="index.js"></script>
+		<script src="./scripts/index.js"></script>
 	</body>
 </html>
